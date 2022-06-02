@@ -37,7 +37,7 @@ def user_choice():
     while not valid:
 
         # ask user for choice and change response to lowercase
-        response = input("File type (distance / time / weight): ").lower()
+        response = input("Measurement type (distance / time / weight): ").lower()
 
         # Checks for valid response and returns text, integer or image
 
@@ -45,10 +45,10 @@ def user_choice():
             return "distance"
             
         elif response in time_ok:
-            return "integer"
+            return "time"
             
         elif response in weight_ok:
-            return "image"
+            return "weight"
             
         else:
             # if response is not valid, output an error
