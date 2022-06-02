@@ -4,14 +4,13 @@ def num_check(question, low):
     valid = False
     while not valid:
 
-        error = "Please enter a number that is more than zero "
-        "(or equal to) {}".format(low)
+        error = "Please enter a number that contains units"
         print()
 
         try:
 
             # ask user to enter a number
-            response = int(input(question))
+            response = float(input(question))
 
             # checks number is more than zero
             if response >= low:
